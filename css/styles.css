@@ -1,0 +1,329 @@
+:root {
+    --primary-color: #b1e8f8;
+    --secondary-color: black;
+    --pink: rgb(255, 0, 247);
+    --lblue: #35d8fc;
+    --font-primary: 'Londrina Shadow';
+    --font-secondary: 'Londrina Solid'; 
+    --font-size: 25px;
+    --font-weight: 700;
+    --text-align: center;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+body {
+    background-color: var(--primary-color);
+    font-family: var(--font-primary);
+    font-weight: var(--font-weight);
+    font-size: 28px;
+    line-height: 1;
+    min-height: 100vh;
+    margin: 10px;
+    padding: 10px;
+}
+
+.page-header {
+    display:flex;
+    flex: auto;
+    width: 100%;
+    padding-bottom: 100px;
+}
+
+.page-header__item {
+    display: flex;
+    float: left;
+    flex: auto;
+    height: 300px;
+    border-bottom: solid var(--secondary-color) 1px; 
+}
+
+.navigation-list li {
+    display: inline-flex;
+    flex: auto;
+    margin-top: 100px;
+    margin-right: 25px;
+}
+
+.navigation-list {
+    font-family: var(--font-secondary);
+    font-weight: var(--font-weight);
+    font-size: var(--font-size);
+    flex: auto;
+    line-height: 1.15;
+    list-style-type: none;
+    text-align: right;
+    width: fit-content;
+    height: fit-content;
+}
+
+.page-header__item:last-child {
+    flex-grow: 1;
+    flex-shrink: 1;
+    text-align: right;
+}
+
+.navigation-list__item--active {
+    text-decoration: none;
+}
+.page-header__img {
+    width: 250px;
+    height: 300px;
+    border-bottom: solid var(--secondary-color) 1px; 
+}
+
+.profile__portrait {
+    float: left;
+    width: 280px;
+    margin-right: 25px;
+    border-radius: 5%;
+}
+
+.profile {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 0 10px;
+    text-align: var(--text-align);
+}
+
+.page-footer {
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    text-align: var(--text-align);
+    padding: 50px 0;
+}
+
+h1 {
+    font-family: var(--font-primary);
+    font-weight: var(--font-weight);
+    text-align: var(--text-align);
+    text-decoration:overline;
+}
+
+h2 {
+    font-family: var(--font-secondary);
+    font-weight: var(--font-weight);
+    font-size: var(--font-size);
+    line-height: 1.25;
+    text-align: var(--text-align);
+}
+
+h3 {
+    text-align: var(--text-align);
+}
+
+p {
+    font-family: var(--font-secondary);
+    font-weight: var(--font-weight);
+    font-size: var(--font-size);
+    text-align: var(--text-align);
+}
+
+.button {
+    /* overwrites browser defaults and resets the border */
+    border: none;
+    display: inline-block;
+    /* takes the font from the outer container */
+    font-family: inherit;
+    /* styles the button */
+    background-color: #060c35;
+    color: var(--lblue);
+    text-decoration: none;
+    padding: 10px;
+    border-radius: 3px;
+    /* width of the border, type, color */
+    border-bottom: 2px solid var(--lblue);
+    transition: 0.2s opacity;
+    margin: 0;
+}
+
+.main-about {
+    text-align: var(--text-align);
+}
+
+ul {
+    list-style: none;
+}
+
+.table {
+    margin: auto;
+    width: 50%;
+}
+
+button, 
+    .button1, 
+    .button2, 
+    .my-input {
+        clear: both;
+        display: inline-block;
+        background-color: #07564a;
+        color: rgb(245, 222, 24);
+        font-size: 22px;
+        margin-top: 10px;
+        margin-bottom: 10px;
+        padding: 12px;
+        border-radius: 48%;
+        transition: 0.2s opacity;
+}
+
+
+
+button:hover, button:focus, .button:hover, .button:focus {
+    /* No underlining when hovering over a link */
+    cursor:pointer;
+    opacity: 0.8;
+    outline: 3px solid var(--pink);
+}
+
+button:visited {
+    /* visited link */
+    color: #c73af6;
+}
+
+button:active {
+    /* selected link */
+    background-color: var(--secondary-color);
+}
+
+.button_secondary {
+    background-color: #060c35;
+    color: var(--lblue);
+    transition: 0.2s opacity;
+}
+
+a {
+    font-family: var(--font-secondary);
+    color: #024d42;
+}
+
+a:visited {
+    /* visited link */
+    color: #2f7d33;
+}
+
+a:active {
+    /* selected link */
+    color: var(--secondary-color);
+}
+
+a:hover, a:focus {
+    /* No underlining when hovering over a link */
+    text-decoration: none;
+    outline: 2px solid var(--pink);
+}
+
+.main-contact {
+    margin: 20px;
+    line-height: 35px;
+}
+
+.page-footer {
+    clear: both;
+    display: flex;
+    flex-direction: column;
+    text-align: var(--text-align);
+    padding: 50px 0;
+}
+
+#grid-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    grid-gap: 20px;
+}
+
+#grid-container .grid__item {
+    background-color: lightgrey;
+    color: rgb(70, 1, 87);
+    text-align: var(--text-align);
+    min-height: 100px;
+    padding: 10px 20px;
+}
+
+@keyframes color-change {
+    0% {
+        fill: #edc655;
+      }
+      50% {
+        fill: #fcffad;
+      }
+      100% {
+        fill: #f76414;
+      }
+}
+
+.sun {
+    animation: 5s color-change infinite alternate linear;
+}
+
+@keyframes cloud-move {
+    from {
+        transform: translate(0, 50px);
+    }
+    to {
+        transform: translate(200px, 50px);
+    }
+}
+
+.cloud-front {
+    animation: 30s cloud-move infinite alternate linear;
+}
+
+@keyframes cloud-move-reverse {
+    from {
+        transform: translate(446px, 48px);
+    }
+    to {
+        transform: translate(100px, 48px);
+    }
+}
+
+.cloud-back {
+    animation: 34s cloud-move-reverse infinite alternate linear;
+}
+
+@media all and (max-width: 500px) {
+    
+    #grid-container {
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+}
+    .grid__item:last-child {
+        grid-column: auto / auto;
+        grid-row: auto / auto;
+}
+    h3 {
+        font-size: 22px;
+}
+    p {
+        font-size: 22px;
+}
+    a {
+        font-size: 22px;
+}
+
+}
+
+@media all and (max-width: 750px) {
+   
+    #grid-container {
+        grid-template-columns: 1fr;
+        grid-gap: 10px;
+}
+    .grid__item:last-child {
+        grid-column: auto / auto;
+        grid-row: auto / auto;
+}
+    h3 {
+        font-size: 22px;
+}
+    p {
+        font-size: 22px;
+}
+    a {
+        font-size: 22px;
+}
+
+}
