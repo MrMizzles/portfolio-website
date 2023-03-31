@@ -130,7 +130,8 @@ p {
     text-align: center;
 }
 
-.button {
+.button,
+    .my-input {
     /* overwrites browser defaults and resets the border */
     border: none;
     display: inline-block;
@@ -164,8 +165,7 @@ ul {
 
 button, 
     .button1, 
-    .button2, 
-    .my-input {
+    .button2 {
         clear: both;
         display: inline-block;
         background-color: #07564a;
@@ -266,6 +266,14 @@ a:focus {
 .main-contact {
     margin: 20px;
     line-height: 35px;
+    text-align: center;
+}
+
+.standard-label {
+    margin:10px;
+    line-height: 60px;
+    text-align: center;
+    
 }
 
 .page-footer {
