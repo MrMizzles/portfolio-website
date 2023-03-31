@@ -184,6 +184,9 @@ button:hover {
     cursor:pointer;
     opacity: 0.8;
     outline: 3px solid rgb(255, 0, 247);
+    transform: scale(.9);
+    box-shadow: 0 5px 5px rgba(0, 150, 241, 0.75);
+    border: 1px solid var(255, 0, 247);
 }
 
 button:focus {
@@ -198,6 +201,9 @@ button:focus {
     cursor:pointer;
     opacity: 0.8;
     outline: 3px solid rgb(255, 0, 247);
+    transform: scale(1.1);
+    box-shadow: 0 5px 5px rgba(0, 150, 241, 0.75);
+    border: 1px solid var(255, 0, 247);
 }
 
 .button:focus {
@@ -215,6 +221,8 @@ button:visited {
 button:active {
     /* selected link */
     background-color: black;
+    transform: scale(0.9);
+    box-shadow: 0 2px 10px rgba(0, 150, 241, 0.75);
 }
 
 .button_secondary {
@@ -237,12 +245,16 @@ a:visited {
 a:active {
     /* selected link */
     color: black;
+    transform: scale(0.9);
+    box-shadow: 0 2px 10px rgba(0, 150, 241, 0.75);
 }
 
 a:hover {
     /* No underlining when hovering over a link */
     text-decoration: none;
     outline: 2px solid rgb(255, 0, 247);
+    transform: scale(1.1);
+    box-shadow: 0 8px 8px rgba(0, 149, 241, 0.734);
 }
 
 a:focus {
@@ -286,8 +298,18 @@ a:focus {
 }
 
 .grid__item:hover {
-    transition: transform 1.25s;
+    transition: transform 1.4s;
     transform: rotate(360deg);
+}
+
+.grid__item:nth-child(2):hover {
+    transition: transform 1s;
+    transform: scale(1.5);
+}
+
+.grid__item:nth-child(5):hover {
+    transition: transform 1s;
+    transform: scale(1.5);
 }
 
 @-webkit-keyframes color-change {
