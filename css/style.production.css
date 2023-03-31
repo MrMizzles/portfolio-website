@@ -104,19 +104,6 @@ body {
     text-align: center;
 }
 
-.page-footer {
-    clear: both;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-orient: vertical;
-    -webkit-box-direction: normal;
-        -ms-flex-direction: column;
-            flex-direction: column;
-    text-align: center;
-    padding: 50px 0;
-}
-
 h1 {
     font-family: 'Londrina Shadow';
     font-weight: 700;
@@ -192,16 +179,12 @@ button,
         transition: 0.2s opacity;
 }
 
-
-
 button:hover {
     /* No underlining when hovering over a link */
     cursor:pointer;
     opacity: 0.8;
     outline: 3px solid rgb(255, 0, 247);
 }
-
-
 
 button:focus {
     /* No underlining when hovering over a link */
@@ -210,16 +193,12 @@ button:focus {
     outline: 3px solid rgb(255, 0, 247);
 }
 
-
-
 .button:hover {
     /* No underlining when hovering over a link */
     cursor:pointer;
     opacity: 0.8;
     outline: 3px solid rgb(255, 0, 247);
 }
-
-
 
 .button:focus {
     /* No underlining when hovering over a link */
@@ -304,6 +283,11 @@ a:focus {
     text-align: center;
     min-height: 100px;
     padding: 10px 20px;
+}
+
+.grid__item:hover {
+    transition: transform 1.25s;
+    transform: rotate(360deg);
 }
 
 @-webkit-keyframes color-change {
