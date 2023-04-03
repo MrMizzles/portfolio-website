@@ -391,14 +391,14 @@ a:focus {
 }
 
 svg {
-    width: 90vw;
+    width: 95vw;
     height: auto; 
     border: #060c35 solid 5px;
     border-radius: 10%;
     margin-top: 25px;
-    margin-right: 25px;
+    margin-right: 15px;
     margin-bottom: 25px;
-    margin-left: 35px;
+    margin-left: 11px;
 }
 
 /*svg * {
