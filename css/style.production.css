@@ -172,6 +172,16 @@ ul {
     width: 50%;
 }
 
+table, caption, tr, th, td {
+    border: #bd0af9 1px solid;
+    padding: 2px;
+    text-align: center;
+}
+
+caption {
+    border: #bd0af9 1.50px solid;
+}
+
 button, 
     .button1, 
     .button2 {
@@ -388,7 +398,7 @@ svg {
     margin-top: 25px;
     margin-right: 25px;
     margin-bottom: 25px;
-    margin-left: 30px;
+    margin-left: 35px;
 }
 
 /*svg * {
