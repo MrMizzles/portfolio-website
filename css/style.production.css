@@ -172,14 +172,25 @@ ul {
     width: 50%;
 }
 
-table, caption, tr, th, td {
+table, tr, th, td {
     border: #bd0af9 1px solid;
+    background-color: #00ff15;
+    padding: 2px;
+    text-align: center;
+}
+
+table, caption, tr, th, td {
+    border: #bd0af9 5px solid;
+    background-color: #00ff15;
     padding: 2px;
     text-align: center;
 }
 
 caption {
-    border: #bd0af9 1.50px solid;
+    border-top: #bd0af9 5px solid;
+    border-left: #bd0af9 5px solid;
+    border-right: #bd0af9 5px solid;
+    border-bottom: none;
 }
 
 button, 
@@ -302,7 +313,6 @@ a:focus {
     margin:10px;
     line-height: 60px;
     text-align: center;
-    
 }
 
 .page-footer {
@@ -365,8 +375,14 @@ a:focus {
     0% {
         fill: #f400bb;
       }
-      50% {
+      25% {
         fill: #fcffad;
+      }
+      50% {
+        fill: #fb1303;
+      }
+      75% {
+        fill: #1403fb;
       }
       100% {
         fill: #f76414;
@@ -377,8 +393,14 @@ a:focus {
     0% {
         fill: #f400bb;
       }
-      50% {
+      25% {
         fill: #fcffad;
+      }
+      50% {
+        fill: #fb1303;
+      }
+      75% {
+        fill: #1403fb;
       }
       100% {
         fill: #00ff15;
@@ -386,8 +408,8 @@ a:focus {
 }
 
 .truckbody {
-    -webkit-animation: 1.25s color-change infinite alternate linear;
-    animation: 1.25s color-change infinite alternate linear;
+    -webkit-animation: 3s color-change infinite alternate linear;
+    animation: 3s color-change infinite alternate linear;
 }
 
 svg {
